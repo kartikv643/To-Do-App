@@ -1,0 +1,93 @@
+:root {
+  --main_color: #0d8a86
+}
+
+.app-container {
+  text-align: center;
+  justify-content: flex-start;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.input-section {
+  margin-top: 175px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 16px;
+  margin-left: 10px;
+  font-weight: bold;
+  background-color: var(--main_color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todo-list {
+  height: calc(100% - 235px);
+  overflow-y: auto;
+  list-style: none;
+  position: relative;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.todo-item {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+span {
+  cursor: pointer;
+}
+
+.header {
+  background-color: var(--main_color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 24px;
+  height: 150px;
+  h1 {
+    margin: 0;
+  }
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 12px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.app-container {
+  padding-bottom: 80px;
+}
